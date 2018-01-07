@@ -33,16 +33,10 @@ export default {
   },
   data () {
     return {
-      url: "https://gss3.bdstatic.com/7Po3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike80%2C5%2C5%2C80%2C26/sign=8e9bf50d57fbb2fb202650402e234bc1/8cb1cb13495409230a219e2e9058d109b3de4912.jpg"
+      url: require("../assets/main.jpg")
     }
   },
   beforeRouteLeave(to, from, next){
-    if(to && from && from.path == "/Main"){
-      this.$router.push('/Main');
-      console.log("不能从/Main返回");
-      return;
-    }
-
     console.log("to:" + to.path);
     console.log("from:" + from.path);
     next();
