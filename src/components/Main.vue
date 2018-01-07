@@ -8,13 +8,13 @@
       </p>
     </blur>
       <group>
-      <cell title="门禁二维码" is-link>
+      <cell title="门禁二维码" is-link link="/Eqcode">
         <i slot="icon" width="20" class="icon iconfont">&#xe601;</i>
       </cell>
-      <cell title="预定会议室" is-link>
+      <cell title="预定会议室" is-link link="/Meetting">
         <i slot="icon" width="20" class="icon iconfont">&#xe65d;</i>
       </cell>
-      <cell title="系统设置" is-link>
+      <cell title="系统设置" is-link link="/Setting">
         <i slot="icon" width="20" class="icon iconfont">&#xe607;</i>
       </cell>
     </group>
@@ -22,29 +22,30 @@
 </template>
 
 <script>
-import { Flexbox, FlexboxItem, Blur,Grid, GridItem,GroupTitle,Group, XSwitch,Cell  } from 'vux'
+import { Blur,Group, Cell,GroupTitle  } from 'vux'
 
 export default {
   components: {
     Blur,
-    Flexbox,
-    FlexboxItem,
-    Grid, 
-    GridItem,
-    GroupTitle,
     Group, 
-    XSwitch,
-    Cell
+    Cell,
+    GroupTitle
   },
   data () {
     return {
-      images: [
-        'https://o3e85j0cv.qnssl.com/tulips-1083572__340.jpg',
-        'https://o3e85j0cv.qnssl.com/waterway-107810__340.jpg',
-        'https://o3e85j0cv.qnssl.com/hot-chocolate-1068703__340.jpg'
-      ],
-      url: require('../assets/banner.png')
+      url: "https://gss3.bdstatic.com/7Po3dSag_xI4khGkpoWK1HF6hhy/baike/c0%3Dbaike80%2C5%2C5%2C80%2C26/sign=8e9bf50d57fbb2fb202650402e234bc1/8cb1cb13495409230a219e2e9058d109b3de4912.jpg"
     }
+  },
+  beforeRouteLeave(to, from, next){
+    if(to && from && from.path == "/Main"){
+      this.$router.push('/Main');
+      console.log("不能从/Main返回");
+      return;
+    }
+
+    console.log("to:" + to.path);
+    console.log("from:" + from.path);
+    next();
   }
 }
 </script>

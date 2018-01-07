@@ -4,19 +4,22 @@ import Vue from 'vue'
 import FastClick from 'fastclick'
 import VueRouter from 'vue-router'
 import App from './App'
-import Logo from './components/Logo'
+import Login from './components/Login'
 import Register from './components/Register'
 import Forgot from './components/Forgot'
 import Main from './components/Main'
-import AccessControl from './components/AccessControl'
+import Setting from './components/Setting'
+import Eqcode from './components/Eqcode'
+import Meetting from './components/Meetting'
 Vue.use(VueRouter)
-
+require("./common/api.js")
+require("./common/common.css")
 const routes = [{
   path: '/',
-  component: Logo
+  component: Login
 },{
-  path: '/Logo',
-  component: Logo
+  path: '/Login',
+  component: Login
 },{
   path: '/Register',
   component: Register
@@ -25,11 +28,16 @@ const routes = [{
   component: Forgot
 },{
   path: '/Main',
-  component: Main,
-  children:[{
-    path: 'AccessControl',
-    component: AccessControl
-  }]
+  component: Main
+},{
+  path: '/Setting',
+  component: Setting
+},{
+  path: '/Eqcode',
+  component: Eqcode
+},{
+  path: '/Meetting',
+  component: Meetting
 }]
 
 const router = new VueRouter({

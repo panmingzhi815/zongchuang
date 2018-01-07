@@ -9,7 +9,7 @@
       </x-input>
     </group>
      <box gap="15px 20px">
-      <x-button :gradients="['#1D62F0','#1D62F0']">立即注册</x-button>
+      <x-button :gradients="['#1D62F0', '#19D5FD']">立即注册</x-button>
     </box>
   </div>
 </template>
@@ -68,22 +68,5 @@ export default {
 </script>
 
 <style>
-.my-header {
-  background-color: #1d62f0 !important;
-}
-.logo-panel {
-  text-align: center;
-  width: 100%;
-}
-.logo {
-  width: 6rem;
-  height: 6rem;
-  margin-top: 1rem;
-}
-.pull-left {
-  text-align: left;
-}
-.pull-right {
-  text-align: right;
-}
+
 </style>

@@ -1,0 +1,12 @@
+.my-header {
+    background-color: rgb(62, 122, 241) !important;
+}
+.pull-left {
+    text-align: left;
+}
+.pull-right {
+    text-align: right;
+}
+.text-tips{
+    color:#aabbcc;
+}

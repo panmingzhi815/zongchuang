@@ -9,7 +9,7 @@
       <x-input title="密　码" v-model="password" type="password"></x-input>
     </group>
      <box gap="15px 20px">
-      <x-button :gradients="['#1D62F0','#1D62F0']" @click.native="login">登录</x-button>
+      <x-button :gradients="['#1D62F0', '#19D5FD']" @click.native="login">登录</x-button>
     </box>
     <box gap="10px 20px">
     <flexbox>
@@ -48,9 +48,7 @@ export default {
 </script>
 
 <style>
-.my-header{
-  background-color: #1D62F0!important;
-}
+
 .logo-panel{
   text-align: center;
   width: 100%;
@@ -60,13 +58,5 @@ export default {
   height: 6rem;
   margin-top: 1rem;
 }
-.pull-left{
-  text-align: left;
-}
-.pull-right{
-  text-align: right;
-}
-.text-tips{
-  color:#aabbcc;
-}
+
 </style>

@@ -8,4 +8,6 @@
     </author>
     <content src="index.html" />
     <access origin="*" />
+    <preference name="windowBackground" value="#FFF" />
+    <preference name="statusBarAppearance" value="false" />
 </widget>
