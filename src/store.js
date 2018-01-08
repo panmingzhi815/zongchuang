@@ -27,13 +27,16 @@ const store = new Vuex.Store({
   },
   getters:{
       GET_MEETTING_LIST:state=>{
+        console.log( state.meettingList);
           var result = [];
-          for(m in state.meettingList){
+          for(var m in state.meettingList){
               result.push({
                   src:require("./assets/meetting.png"),
                   title:m.time,
                   desc:m.meettingName
               });
+              console.log(m.time);
+              console.log(m.meettingName);
           }
           console.log(result);
           return result;
