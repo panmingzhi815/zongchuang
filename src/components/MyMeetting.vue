@@ -1,15 +1,18 @@
 <template>
   <div>
-    <x-header class="my-header">会议室列表</x-header>
+    <x-header class="my-header">会议室列表
+    </x-header>
     <panel :list="list" type="1" @on-img-error="onImgError"></panel>
   </div>
 </template>
 <script>
-import { Panel,XHeader } from 'vux'
+import { Panel, Group, Radio,XHeader } from 'vux'
 
 export default {
   components: {
     Panel,
+    Group,
+    Radio,
     XHeader
   },
   methods: {
@@ -19,7 +22,7 @@ export default {
   },
   data () {
     return {
-      list: this.$store.state.meettingRoomList
+      list: this.$store.getters.GET_MEETTING_LIST
     }
   }
 }

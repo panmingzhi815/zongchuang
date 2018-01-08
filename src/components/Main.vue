@@ -7,12 +7,17 @@
         潘明智
       </p>
     </blur>
-      <group>
-      <cell title="门禁二维码" is-link link="/Eqcode">
-        <i slot="icon" width="20" class="icon iconfont">&#xe601;</i>
-      </cell>
+    <group>
       <cell title="预定会议室" is-link link="/Meetting">
         <i slot="icon" width="20" class="icon iconfont">&#xe65d;</i>
+      </cell>
+      <cell title="我的预定" is-link link="/MyMeetting">
+        <i slot="icon" width="20" class="icon iconfont">&#xe65d;</i>
+      </cell>
+    </group>
+    <group>
+      <cell title="门禁二维码" is-link link="/Eqcode">
+        <i slot="icon" width="20" class="icon iconfont">&#xe601;</i>
       </cell>
       <cell title="系统设置" is-link link="/Setting">
         <i slot="icon" width="20" class="icon iconfont">&#xe607;</i>

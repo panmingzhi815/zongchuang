@@ -12,6 +12,8 @@
   "dependencies": {
     "fastclick": "^1.0.6",
     "jshint": "^2.9.5",
+    "moment": "^2.20.1",
+    "run": "^1.4.0",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1",
     "vuex": "^2.1.1",
