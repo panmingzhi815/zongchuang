@@ -3,7 +3,6 @@
 import Vue from 'vue'
 import FastClick from 'fastclick'
 import VueRouter from 'vue-router'
-import moment from 'moment'
 import App from './App'
 import Login from './components/Login'
 import Register from './components/Register'
@@ -12,14 +11,14 @@ import Main from './components/Main'
 import Setting from './components/Setting'
 import Eqcode from './components/Eqcode'
 import Meetting from './components/Meetting'
-import AddMeetting from './components/AddMeetting'
+import EditMeetting from './components/EditMeetting'
 import MyMeetting from './components/MyMeetting'
 import store from './store'
 
 Vue.use(VueRouter)
-Vue.use(moment)
 require("./common/api.js")
 require("./common/common.css")
+var moment = require('moment');
 
 const routes = [{
   path: '/',
@@ -46,8 +45,8 @@ const routes = [{
   path: '/Meetting',
   component: Meetting
 },{
-  path: '/AddMeetting',
-  component: AddMeetting
+  path: '/EditMeetting',
+  component: EditMeetting
 },{
   path: '/MyMeetting',
   component: MyMeetting

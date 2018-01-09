@@ -4,7 +4,7 @@
       <p class="center">
         <img :src="url" />
         <br/>
-        潘明智
+        小潘
       </p>
     </blur>
     <group>

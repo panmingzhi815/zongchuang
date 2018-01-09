@@ -1,7 +1,6 @@
 <template>
   <div>
-    <x-header class="my-header">会议室列表
-    </x-header>
+    <x-header class="my-header">我的预定</x-header>
     <panel :list="list" type="1" @on-img-error="onImgError"></panel>
   </div>
 </template>
@@ -22,8 +21,11 @@ export default {
   },
   data () {
     return {
-      list: this.$store.getters.GET_MEETTING_LIST
+      list: []
     }
+  },
+  mounted(){
+    this.list = this.$store.getters.GET_MEETTING_LIST;
   }
 }
 </script>
